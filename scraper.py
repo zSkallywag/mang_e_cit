@@ -12,10 +12,12 @@ class JustEat:
 
     def Address(self):
         # pagina dove inserire dati
-        self.browser.get("https://www.justeat.com/")
-        time.sleep(3)
+        self.browser.get("https://www.justeat.it/")
+        time.sleep(5)
 
+        self.browser.delete_all_cookies()
         self.browser.find_element_by_class_name("Form_c-search-input_3ySg3").send_keys(address)
+        self.browser.find_element_by_class_name("Form_c-search-btn_2cjDI").submit()
 
         time.sleep(2)
 
