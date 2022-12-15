@@ -1,12 +1,13 @@
 import time
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 
 class JustEat:
     def __init__(self, address):
 
-        self.browser = webdriver.Chrome("/usr/bin/chromedriver")
+        self.browser = webdriver.Chrome(ChromeDriverManager().install())
         self.address = address
 
     def Address(self):
