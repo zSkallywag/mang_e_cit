@@ -197,7 +197,7 @@ body {
 
 .main-white-button a {
   display: inline-block;
-  background-color: #fff;
+  background-color: dimgrey;
   font-size: 15px;
   font-weight: 400;
   color: #2a2a2a;
@@ -212,8 +212,8 @@ body {
   margin-right: 10px;
   width: 22px;
   height: 22px;
-  background-color: #8d99af;
-  color: #fff;
+  background-color: black;
+  color: orange;
   border-radius: 50%;
   display: inline-block;
   text-align: center;
@@ -280,7 +280,7 @@ header
   width: 63px;
   height: 65px;
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .background-header .main-nav a.logo {
@@ -702,7 +702,7 @@ header
     top: 15px;
   }
   .header-area .main-nav .nav li.submenu:hover ul, .header-area .main-nav .nav li.submenu:focus ul {
-    height: 0px;
+    height: 0;
   }
 }
 
@@ -724,8 +724,8 @@ Banner Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url(../images/banner-bg.jpg);
-  padding: 290px 0px 180px 0px;
+  background-image: url(../images/banner-bg.jpeg);
+  padding: 290px 0 180px 0;
   position: relative;
   overflow: hidden;
 }
@@ -735,19 +735,28 @@ Banner Style
 }
 
 .main-banner .top-text h6 {
-  color: #fff;
-  font-size: 15px;
+  width:20%;
+  margin-left:40%;
+  color: #000000;
+  font-size: 1rem;
   font-weight: 500;
   text-transform: uppercase;
+  background-color:white;
 }
 
 .main-banner .top-text h2 {
-  color: #fff;
-  font-size: 35px;
+  border-style: solid !important;
+  border-color: black !important;
+  border:5px;
+  width:40%;
+  margin-left:30%;
+  color: #000000;
+  font-size: 2.1875rem;
   font-weight: 800;
   text-transform: capitalize;
   margin-top: 15px;
-  margin-bottom: 45px;
+  margin-bottom: 65px;
+  background-color: white;
 }
 
 .main-banner ul.categories {
