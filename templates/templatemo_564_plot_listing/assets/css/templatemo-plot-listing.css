@@ -277,18 +277,18 @@ header
 
 .header-area .main-nav a.logo {
   background-image: url(../images/white-logo.png);
-  width: 166px;
-  height: 58px;
+  width: 63px;
+  height: 65px;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .background-header .main-nav a.logo {
   background-image: url(../images/black-logo.png);
-  width: 164px;
-  height: 58px;
+  width: 63px;
+  height: 65px;
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .background-header .main-nav .nav {
@@ -743,7 +743,7 @@ Banner Style
 
 .main-banner .top-text h2 {
   color: #fff;
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 800;
   text-transform: capitalize;
   margin-top: 15px;
@@ -1155,7 +1155,7 @@ footer a {
 }
 
 footer .logo img {
-  max-width: 163px;
+  max-width: 63px;
   margin-bottom: 30px;
 }
 
