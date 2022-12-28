@@ -10721,4 +10721,36 @@ textarea.form-control-lg {
   }
 }
 
+@media (min-width: 992px) {
+  .col-lg-3-search {
+    position: absolute!important;
+    margin-left: 42rem!important;
+    width: 22%!important;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-3-search {
+    position: absolute;
+    margin-left: 51rem!important;
+    width: 22%;
+  }
+}
+
+  @media (min-width: 1380px) {
+  .col-lg-3-search {
+    position: absolute!important;
+    margin-left: 51rem!important;
+    width: 21% !important;
+  }
+}
+ @media (min-width: 1400px) {
+  .col-lg-3-search {
+    position: absolute!important;
+    margin-left: 59.8rem!important;
+    width: 22% !important;
+  }
+}
+
+
+
 /*# sourceMappingURL=bootstrap.css.map */

@@ -197,7 +197,7 @@ body {
 
 .main-white-button a {
   display: inline-block;
-  background-color: dimgrey;
+  background-color: black;
   font-size: 15px;
   font-weight: 400;
   color: #2a2a2a;
@@ -212,8 +212,8 @@ body {
   margin-right: 10px;
   width: 22px;
   height: 22px;
-  background-color: black;
-  color: orange;
+  background-color: orange;
+  color: black;
   border-radius: 50%;
   display: inline-block;
   text-align: center;
@@ -320,7 +320,7 @@ header
 
 .header-area .main-nav .nav li:last-child a ,
 .background-header .main-nav .nav li:last-child a {
-  color: #2a2a2a !important;
+  color: white !important;
   text-transform: capitalize;
   padding: 0px 20px;
   font-weight: 400;
@@ -333,13 +333,13 @@ header
 }
 
 .background-header .main-nav .nav li:last-child .main-white-button a {
-  background-color: #8d99af;
+  background-color: orange;
   color: #fff !important;
 }
 
 .background-header .main-nav .nav li:last-child .main-white-button a i {
-  background-color: #fff;
-  color: #8d99af;
+  background-color: black;
+  color: orange;
 }
 
 .header-area .main-nav .nav li:last-child a:hover,
@@ -365,18 +365,18 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #8d99af!important;
+  color: orange!important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-  color: #8d99af!important;
+  color: orange!important;
   opacity: 1;
 }
 
 .header-area .main-nav .nav li:last-child a:hover ,
 .background-header .main-nav .nav li:last-child a:hover {
-  background-color: #8d99af;
+  background-color: #252525;
 }
 
 .header-area .main-nav .nav li.has-sub {
@@ -385,7 +385,7 @@ header
 }
 
 .header-area .main-nav .nav li.has-sub:after {
-  font-family: FontAwesome;
+  font-family: FontAwesome, serif;
   content: "\f107";
   font-size: 12px;
   color: #fff;
