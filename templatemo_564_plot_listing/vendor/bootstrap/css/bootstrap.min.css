@@ -132,7 +132,6 @@ abbr[title],
 abbr[data-bs-original-title] {
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
   cursor: help;
   -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
@@ -649,7 +648,7 @@ progress {
 }
 
 .col {
-  flex: 1 0 0%;
+  flex: 1 0 0;
 }
 
 .row-cols-auto > * {
@@ -858,7 +857,7 @@ progress {
 
 @media (min-width: 576px) {
   .col-sm {
-    flex: 1 0 0%;
+    flex: 1 0 0;
   }
 
   .row-cols-sm-auto > * {
@@ -1071,7 +1070,7 @@ progress {
 }
 @media (min-width: 768px) {
   .col-md {
-    flex: 1 0 0%;
+    flex: 1 0 0;
   }
 
   .row-cols-md-auto > * {
@@ -1284,7 +1283,7 @@ progress {
 }
 @media (min-width: 992px) {
   .col-lg {
-    flex: 1 0 0%;
+    flex: 1 0 0;
   }
 
   .row-cols-lg-auto > * {
@@ -1497,7 +1496,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .col-xl {
-    flex: 1 0 0%;
+    flex: 1 0 0;
   }
 
   .row-cols-xl-auto > * {
@@ -1710,7 +1709,7 @@ progress {
 }
 @media (min-width: 1400px) {
   .col-xxl {
-    flex: 1 0 0%;
+    flex: 1 0 0;
   }
 
   .row-cols-xxl-auto > * {
@@ -4339,7 +4338,7 @@ textarea.form-control-lg {
     flex-flow: row wrap;
   }
   .card-group > .card {
-    flex: 1 0 0%;
+    flex: 1 0 0;
     margin-bottom: 0;
   }
   .card-group > .card + .card {
@@ -10725,14 +10724,14 @@ textarea.form-control-lg {
   .col-lg-3-search {
     position: absolute!important;
     margin-left: 42rem!important;
-    width: 22%!important;
+    width: 230px!important;
   }
 }
 @media (min-width: 1200px) {
   .col-lg-3-search {
     position: absolute;
     margin-left: 51rem!important;
-    width: 22%;
+    width: 280px!important;
   }
 }
 
@@ -10740,14 +10739,14 @@ textarea.form-control-lg {
   .col-lg-3-search {
     position: absolute!important;
     margin-left: 51rem!important;
-    width: 21% !important;
+    width: 280px !important;
   }
 }
  @media (min-width: 1400px) {
   .col-lg-3-search {
     position: absolute!important;
     margin-left: 59.8rem!important;
-    width: 22% !important;
+    width: 320px !important;
   }
 }
 

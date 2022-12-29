@@ -34,7 +34,7 @@ font & reset css
 reset
 --------------------------------------------- 
 */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div,
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
 figure, header, nav, section, article, aside, footer, figcaption {
@@ -116,12 +116,12 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 p {
@@ -163,7 +163,7 @@ body {
   }
   .mobile-top-fix {
     margin-top: 30px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .mobile-bottom-fix {
     margin-bottom: 30px;
@@ -236,10 +236,10 @@ header
   background-color: #fff!important;
   height: 80px!important;
   position: fixed!important;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15)!important;
 }
 
 .background-header .logo,
@@ -259,9 +259,9 @@ header
   background-color: transparent;
   border-bottom: 1px solid rgba(250,250,250,0.2);
   position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   height: 100px;
   -webkit-transition: all .5s ease 0s;
@@ -298,7 +298,7 @@ header
 .header-area .main-nav .nav {
   float: right;
   margin-top: 30px;
-  margin-right: 0px;
+  margin-right: 0;
   background-color: transparent;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -313,37 +313,37 @@ header
   padding-right: 30px;
 }
 
-.header-area .main-nav .nav li:last-child {
-  padding-right: 0px;
-  padding-left: 40px;
+.header-area .main-nav .nav li {
+  padding-right: 0;
+  padding-left: 30px;
 }
 
-.header-area .main-nav .nav li:last-child a ,
-.background-header .main-nav .nav li:last-child a {
+.header-area .main-nav .nav li a ,
+.background-header .main-nav .nav li a {
   color: white !important;
   text-transform: capitalize;
-  padding: 0px 20px;
+  padding: 0 0 0 9px;
   font-weight: 400;
 }
 
-.header-area .main-nav .nav li:last-child a i,
-.background-header .main-nav .nav li:last-child a i {
-  font-size: 12px!important;
+.header-area .main-nav .nav li a i ,
+.background-header .main-nav .nav li a i {
+  font-size: 20px!important;
   font-weight: 400 !important;
 }
 
-.background-header .main-nav .nav li:last-child .main-white-button a {
+.background-header .main-nav .nav li .main-white-button a {
   background-color: orange;
   color: #fff !important;
 }
 
-.background-header .main-nav .nav li:last-child .main-white-button a i {
+.background-header .main-nav .nav li .main-white-button a i {
   background-color: black;
   color: orange;
 }
 
-.header-area .main-nav .nav li:last-child a:hover,
-.header-area .main-nav .nav li:last-child a.active {
+.header-area .main-nav .nav li a:hover,
+.header-area .main-nav .nav li a.active {
   color: #fff !important;
 }
 
@@ -374,8 +374,8 @@ header
   opacity: 1;
 }
 
-.header-area .main-nav .nav li:last-child a:hover ,
-.background-header .main-nav .nav li:last-child a:hover {
+.header-area .main-nav .nav li a:hover ,
+.background-header .main-nav .nav li a:hover {
   background-color: #252525;
 }
 
@@ -412,9 +412,9 @@ header
 }
 
 .header-area .main-nav .nav li.has-sub ul.sub-menu li {
-  margin-left: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .header-area .main-nav .nav li.has-sub ul.sub-menu li a {
@@ -597,7 +597,7 @@ header
   }
   .header-area .main-nav .nav li:nth-child(6),
   .background-header .main-nav .nav li:nth-child(6) {
-    padding-right: 0px;
+    padding-right: 0;
   }
 }
 
@@ -618,13 +618,13 @@ header
   }
   .header-area {
     background-color: #f7f7f7;
-    padding: 0px 15px;
+    padding: 0 15px;
     height: 100px;
     box-shadow: none;
     text-align: center;
   }
   .header-area .container {
-    padding: 0px;
+    padding: 0;
   }
   .header-area .logo {
     margin-left: 30px;
@@ -643,7 +643,7 @@ header
     -moz-transition: all 0s ease 0s;
     -o-transition: all 0s ease 0s;
     transition: all 0s ease 0s;
-    margin-left: 0px;
+    margin-left: 0;
   }
   .background-header .nav {
     margin-top: 80px;
@@ -658,13 +658,13 @@ header
     width: 100%;
     background: #fff;
     border-bottom: 1px solid #e7e7e7;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   .header-area .main-nav .nav li a {
     height: 50px !important;
     line-height: 50px !important;
-    padding: 0px !important;
+    padding: 0 !important;
     border: none !important;
     background: #f7f7f7 !important;
     color: #191a20 !important;
@@ -679,10 +679,10 @@ header
     opacity: 1;
     z-index: 1;
     transform: translateY(0%);
-    top: 0px;
+    top: 0;
     width: 100%;
     box-shadow: none;
-    height: 0px;
+    height: 0;
     transition: all 0s;
   }
   .header-area .main-nav .nav li.submenu ul li a {
@@ -690,7 +690,7 @@ header
     font-weight: 400;
   }
   .header-area .main-nav .nav li.submenu ul li a:hover:before {
-    width: 0px;
+    width: 0;
   }
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     height: auto;
@@ -725,7 +725,7 @@ Banner Style
   background-position: center center;
   background-size: cover;
   background-image: url(../images/banner-bg.jpeg);
-  padding: 290px 0 180px 0;
+  padding: 180px 0 200px 0;
   position: relative;
   overflow: hidden;
 }
@@ -801,7 +801,7 @@ Banner Style
 
 form#search-form {
   background-color: #fff;
-  padding: 0px 0px 0px 30px;
+  padding: 0 0 0 30px;
   width: 100%;
   border-radius: 7px;
   display: inline-block;
@@ -829,7 +829,7 @@ form#search-form input {
 form#search-form input.searchText {
   border-left: 1px solid #8d99af;
   border-right: 1px solid #8d99af;
-  padding: 0px 30px;
+  padding: 0 30px;
 }
 
 form#search-form input::placeholder {
@@ -905,7 +905,7 @@ Popular Categories
 }
 
 .popular-categories .naccs .menu div.last-thumb {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   border-bottom-left-radius: 7px;
 }
 
@@ -916,7 +916,7 @@ Popular Categories
   margin-bottom: 1px;
   height: 126px;
   text-align: left;
-  padding: 0px 15px;
+  padding: 0 15px;
   line-height: 126px;
   cursor: pointer;
   position: relative;
@@ -1107,7 +1107,7 @@ Recent Listing
 }
 
 .recent-listing .item .right-content ul.info li:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .recent-listing .item .right-content ul.info li img {
@@ -1132,7 +1132,7 @@ Recent Listing
   height: 10px;
   background-color: #8d99af;
   border-radius: 50%;
-  margin: 0px 5px;
+  margin: 0 5px;
   transition: all .3s;
 }
 
@@ -1172,7 +1172,7 @@ footer .logo img {
 }
 
 footer .helpful-links {
-  margin: 0px 45px;
+  margin: 0 45px;
 }
 
 footer .helpful-links ul li {
@@ -1206,7 +1206,7 @@ footer .contact-us a:hover {
 footer .sub-footer {
   text-align: center;
   margin-top: 40px;
-  padding: 40px 0px;
+  padding: 40px 0;
   border-top: 1px solid #eee;
 }
 
@@ -1219,7 +1219,7 @@ contact
 */
 
 .contact-page {
-  margin: 120px 0px;
+  margin: 120px 0;
 }
 
 .contact-page .inner-content {
@@ -1237,7 +1237,7 @@ contact
 
 form#contact {
   position: relative;
-  margin: 0px 60px 0px 45px;
+  margin: 0 60px 0 45px;
 }
 
 form#contact input {
@@ -1250,7 +1250,7 @@ form#contact input {
   font-size: 15px;
   font-weight: 300;
   color: #8d99af;
-  padding: 0px 15px;
+  padding: 0 15px;
   margin-bottom: 30px;
 }
 
@@ -1260,7 +1260,7 @@ form#contact ul li {
 }
 
 form#contact ul li:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 form#contact input[type=checkbox] {
@@ -1356,7 +1356,7 @@ Page Heading
   background-position: center center;
   background-size: cover;
   background-image: url(../images/heading-bg.jpg);
-  padding: 230px 0px 120px 0px;
+  padding: 230px 0 120px 0;
   position: relative;
   overflow: hidden;
 }
@@ -1391,7 +1391,7 @@ Category Post
 
 .category-post {
   overflow: hidden;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 120px;
 }
 
@@ -1434,13 +1434,13 @@ Category Post
 }
 
 .category-post .naccs .menu div.last-thumb {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   border-bottom-right-radius: 7px;
 }
 
 .category-post .naccs .menu div {
   color: #fff;
-  margin: 0px;
+  margin: 0;
   width: 20%;
   font-size: 10px;
   background-color: #8d99af;
@@ -1455,7 +1455,7 @@ Category Post
 }
 
 .category-post .naccs .menu div .thumb {
-  padding: 30px 0px;
+  padding: 30px 0;
   margin-left: 25px;
   margin-right: 25px;
 }
@@ -1626,7 +1626,7 @@ Listing Page
 }
 
 .listing-page .naccs .menu div.last-thumb {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   border-radius: 7px;
 }
 
@@ -1638,7 +1638,7 @@ Listing Page
   margin-bottom: 30px;
   height: 126px;
   text-align: left;
-  padding: 0px 15px;
+  padding: 0 15px;
   line-height: 126px;
   cursor: pointer;
   position: relative;
@@ -1804,7 +1804,7 @@ Listing Page
   height: 10px;
   background-color: #8d99af;
   border-radius: 50%;
-  margin: 0px 5px;
+  margin: 0 5px;
   transition: all .3s;
 }
 
@@ -1993,15 +1993,15 @@ responsive
     margin: 30px;
   }
   .popular-categories .nacc .thumb .right-image {
-    padding: 0px;
-    margin: 0px 30px 30px 30px;
+    padding: 0;
+    margin: 0 30px 30px 30px;
     display: block;
   }
   .popular-categories .naccs .menu div.first-thumb {
     border-top-right-radius: 7px;
   }
   .popular-categories .naccs .menu div.last-thumb {
-    border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0;
   }
   .recent-listing .item .left-image,
   .listing-page .item .left-image {
@@ -2013,7 +2013,7 @@ responsive
   }
   .recent-listing .item .left-image,
   .listing-page .item .left-image {
-    border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0;
     border-top-right-radius: 7px;
   }
   .recent-listing .item .listing-item,
@@ -2027,8 +2027,8 @@ responsive
   .recent-listing .item .right-content .main-white-button,
   .listing-page .item .right-content .main-white-button {
     position: relative;
-    left: 0px;
-    bottom: 0px;
+    left: 0;
+    bottom: 0;
     margin-top: 30px;
   }
   .recent-listing .item .right-content h4 {
@@ -2076,7 +2076,7 @@ responsive
     float: left;
   }
   .header-area .logo {
-    margin-left: 0px;
+    margin-left: 0;
   }
   .header-area .main-nav .menu-trigger {
     right: 15px;
