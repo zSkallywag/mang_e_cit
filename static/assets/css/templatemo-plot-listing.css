@@ -52,7 +52,7 @@ Recent Listing
 ---------------------------------------------
 Footer
 ---------------------------------------------
-*/footer{border-top:1px solid #eee;padding-top:80px}footer h4{font-size:20px;font-weight:700;color:#8d99af;margin-bottom:30px}footer p,footer a{color:#2a2a2a}footer .logo img{max-width:63px;margin-bottom:30px}footer .helpful-links{margin:0 45px}footer .helpful-links ul li{display:block;margin-bottom:15px}footer .helpful-links ul li a{font-size:15px;transition:all .3s}footer .helpful-links ul li a:hover{color:#8d99af;border-bottom:1px solid #8d99af}footer .contact-us p{margin-bottom:25px}footer .contact-us a{transition:all .3s}footer .contact-us a:hover{color:#8d99af;border-bottom:1px solid #8d99af}footer .sub-footer{text-align:center;margin-top:40px;padding:40px 0;border-top:1px solid #eee}/*
+*/footer{border-top:1px solid #eee;padding-top:80px}footer h4{font-size:20px;font-weight:700;color:#8d99af;margin-bottom:30px}footer p,footer a{color:#2a2a2a}footer .logo img{width:auto;height:auto;max-width:63px;margin-bottom:30px}footer .helpful-links{margin:0 45px}footer .helpful-links ul li{display:block;margin-bottom:15px}footer .helpful-links ul li a{font-size:15px;transition:all .3s}footer .helpful-links ul li a:hover{color:#8d99af;border-bottom:1px solid #8d99af}footer .contact-us p{margin-bottom:25px}footer .contact-us a{transition:all .3s}footer .contact-us a:hover{color:#8d99af;border-bottom:1px solid #8d99af}footer .sub-footer{text-align:center;margin-top:40px;padding:40px 0;border-top:1px solid #eee}/*
 ---------------------------------------------
 contact
 ---------------------------------------------
