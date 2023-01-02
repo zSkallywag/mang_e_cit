@@ -21,7 +21,7 @@ app.secret_key = "key"
 def index():
     return render_template("index.html")
 
-@app.route("/index", methods=["POST", "GET"])
+@app.route("/index.html", methods=["POST", "GET"])
 def home():
     return render_template("index.html")
 if __name__ == "__main__":

@@ -80,14 +80,6 @@
          * @protected
          */
         this._coordinates = [];
-
-        /**
-         * Current breakpoint.
-         *   Real media queries would be nice.
-         * @protected
-         */
-        this._breakpoint = null;
-
         /**
          * Current width of the plugin element.
          */
@@ -559,7 +551,7 @@
         var viewport = this.viewport(),
             overwrites = this.options.responsive,
             match = -1,
-            settings = null;
+            settings;
 
         if (!overwrites) {
             settings = $.extend({}, this.options);
@@ -585,7 +577,6 @@
         }
 
         this.trigger('change', {property: {name: 'settings', value: settings}});
-        this._breakpoint = match;
         this.settings = settings;
         this.invalidate('settings');
         this.trigger('changed', {property: {name: 'settings', value: this.settings}});
@@ -1088,7 +1079,7 @@
      */
     Owl.prototype.maximum = function (relative) {
         var settings = this.settings,
-            maximum = this._coordinates.length,
+            maximum,
             iterator,
             reciprocalItemsWidth,
             elementWidth;
@@ -1558,12 +1549,10 @@
      * @protected
      * @param {String} name - The event name.
      * @param {*} [data=null] - The event data.
-     * @param {String} [namespace=carousel] - The event namespace.
-     * @param {String} [state] - The state which is associated with the event.
-     * @param {Boolean} [enter=false] - Indicates if the call enters the specified state or not.
+     * @param namespace
      * @returns {Event} - The event arguments.
      */
-    Owl.prototype.trigger = function (name, data, namespace, state, enter) {
+    Owl.prototype.trigger = function (name, data, namespace) {
         var status = {
             item: {count: this._items.length, index: this.current()}
         }, handler = $.camelCase(
@@ -1678,8 +1667,8 @@
      * Gets unified pointer coordinates from event.
      *   #261
      * @protected
-     * @param {Event} - The `mousedown` or `touchstart` event.
      * @returns {Object} - Contains `x` and `y` coordinates of current pointer position.
+     * @param event
      */
     Owl.prototype.pointer = function (event) {
         var result = {x: null, y: null};
@@ -1704,8 +1693,8 @@
     /**
      * Determines if the input is a Number or something that can be coerced to a Number
      * @protected
-     * @param {Number|String|Object|Array|Boolean|RegExp|Function|Symbol} - The input to be tested
      * @returns {Boolean} - An indication if the input is a Number or can be coerced to a Number
+     * @param number
      */
     Owl.prototype.isNumeric = function (number) {
         return !isNaN(parseFloat(number));
@@ -1715,9 +1704,9 @@
      * Gets the difference of two vectors.
      *   #261
      * @protected
-     * @param {Object} - The first vector.
-     * @param {Object} - The second vector.
      * @returns {Object} - The difference.
+     * @param first
+     * @param second
      */
     Owl.prototype.difference = function (first, second) {
         return {
@@ -1777,7 +1766,7 @@
  * @author David Deutsch
  * @license The MIT License (MIT)
  */
-;(function ($, window, document, undefined) {
+;(function ($, window) {
 
     /**
      * Creates the auto refresh plugin.
@@ -1927,7 +1916,7 @@
                     return;
                 }
 
-                if ((e.property && e.property.name == 'position') || e.type == 'initialized') {
+                if ((e.property && e.property.name === 'position') || e.type === 'initialized') {
                     var settings = this._core.settings,
                         n = (settings.center && Math.ceil(settings.items / 2) || settings.items),
                         i = ((settings.center && n * -1) || 0),
@@ -2041,7 +2030,7 @@
  * @author David Deutsch
  * @license The MIT License (MIT)
  */
-;(function ($, window, document, undefined) {
+;(function ($, window) {
 
     /**
      * Creates the auto height plugin.
@@ -2133,7 +2122,7 @@
             lazyLoadEnabled = this._core.settings.lazyLoad,
             visible = this._core.$stage.children().toArray().slice(start, end),
             heights = [],
-            maxheight = 0;
+            maxheight;
 
         $.each(visible, function (index, item) {
             heights.push($(item).height());
@@ -2174,7 +2163,7 @@
  * @author David Deutsch
  * @license The MIT License (MIT)
  */
-;(function ($, window, document, undefined) {
+;(function ($, window, document) {
 
     /**
      * Creates the video plugin.
@@ -2300,7 +2289,7 @@
 					Visual example: https://regexper.com/#(http%3A%7Chttps%3A%7C)%5C%2F%5C%2F(player.%7Cwww.%7Capp.)%3F(vimeo%5C.com%7Cyoutu(be%5C.com%7C%5C.be%7Cbe%5C.googleapis%5C.com)%7Cvzaar%5C.com)%5C%2F(video%5C%2F%7Cvideos%5C%2F%7Cembed%5C%2F%7Cchannels%5C%2F.%2B%5C%2F%7Cgroups%5C%2F.%2B%5C%2F%7Cwatch%5C%3Fv%3D%7Cv%5C%2F)%3F(%5BA-Za-z0-9._%25-%5D*)(%5C%26%5CS%2B)%3F
 			*/
 
-            id = url.match(/(http:|https:|)\/\/(player.|www.|app.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com|be\-nocookie\.com)|vzaar\.com)\/(video\/|videos\/|embed\/|channels\/.+\/|groups\/.+\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(\&\S+)?/);
+            id = url.match(/(http:|https:|)\/\/(player.|www.|app.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com|be-nocookie\.com)|vzaar\.com)\/(video\/|videos\/|embed\/|channels\/.+\/|groups\/.+\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(&\S+)?/);
 
             if (id[3].indexOf('youtu') > -1) {
                 type = 'youtube';
@@ -2332,7 +2321,7 @@
      * Creates video thumbnail.
      * @protected
      * @param {jQuery} target - The target containing the video data.
-     * @param {Object} info - The video info object.
+     * @param video
      * @see `fetch`
      */
     Video.prototype.thumbnail = function (target, video) {
@@ -2457,7 +2446,7 @@
             html.attr('src', '//view.vzaar.com/' + video.id + '/player?autoplay=true');
         }
 
-        iframe = $(html).wrap('<div class="owl-video-frame" />').insertAfter(item.find('.owl-video'));
+        $(html).wrap('<div class="owl-video-frame" />').insertAfter(item.find('.owl-video'));
 
         this._playing = item.addClass('owl-video-playing');
     };
@@ -2518,14 +2507,14 @@
 
         this.handlers = {
             'change.owl.carousel': $.proxy(function (e) {
-                if (e.namespace && e.property.name == 'position') {
+                if (e.namespace && e.property.name === 'position') {
                     this.previous = this.core.current();
                     this.next = e.property.value;
                 }
             }, this),
             'drag.owl.carousel dragged.owl.carousel translated.owl.carousel': $.proxy(function (e) {
                 if (e.namespace) {
-                    this.swapping = e.type == 'translated';
+                    this.swapping = e.type === 'translated';
                 }
             }, this),
             'translate.owl.carousel': $.proxy(function (e) {
