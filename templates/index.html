@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="Just eat webscrape based project" name="description">
+    <meta content="Gabriele Conte" name="author">
+    <title>Mang & Cit</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link href="../static/assets/css/fontawesome.css" rel="stylesheet" >
+    <link href="../static/assets/css/templatemo-plot-listing.css" rel="stylesheet" >
+    <link href="../static/assets/css/animated.css" rel="stylesheet" >
+    <!--
+
+    TemplateMo 564 Plot Listing
+
+    https://templatemo.com/tm-564-plot-listing
+
+    -->
+</head>
+
+<body>
+
+<!-- ***** Preloader Start ***** -->
+<div class="js-preloader" id="js-preloader">
+    <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+<!-- ***** Preloader End ***** -->
+
+<!-- ***** Header Area Start ***** -->
+<header class="header-area header-sticky wow slideInDown" data-wow-delay="0s" data-wow-duration="0.75s">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="#" class="logo">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li>
+                            <div class="main-white-button"><a href="https://github.com/SoilSystem/mang_e_cit" target=_>
+                                <i class="fa fa-github"></i></a></div>
+                        </li>
+                        <li>
+                            <div class="main-white-button"><a href="index.html"><i class="fa fa-home"></i></a></div>
+                        </li>
+                        <li></li>
+                    </ul>
+                    <a href="#" class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ***** Header Area End ***** -->
+
+<div class="main-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="top-text header-text">
+                    <h6>Over 36,500+ Active Restaurants</h6>
+                    <h2>Find the cheapest <br> and upvoted meals nearby! </h2>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <form action="#" id="search-form" method="submit" name="gs" role="search">
+                    <div class="row" style=margin-top:10px;margin-bottom:2px;>
+                        <div class="col-lg-3-search">
+                            <fieldset>
+                                <button style=background-color:black;><i class="fa fa-search"
+                                                                         style=background-color:orange></i> Search Now
+                                </button>
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-3 align-self-center">
+                            <fieldset>
+                                <input autocomplete="on" class="searchText" name="address" placeholder="Città"
+                                       required type="address">
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-3 align-self-center">
+                            <fieldset>
+                                <input autocomplete="on" class="searchText" name="address" placeholder="Via"
+                                       required type="address">
+
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-3 align-self-center">
+                            <fieldset>
+                                <select aria-label="Area" class="form-select" id="chooseCategory1" name="area"
+                                        onchange="this.form.click()">
+                                    <option selected>Desired Meal</option>
+                                    <option value="New Village">Pizza</option>
+                                    <option value="Old Town">Hamburger</option>
+                                    <option value="Modern City">Fritto</option>
+                                    <option value="Modern City">Italian</option>
+                                </select>
+                            </fieldset>
+                        </div>
+
+
+                    </div>
+
+                    <div class="row" style=margin-bottom:8px;>
+                        <div class="col-lg-3 align-self-center">
+
+                            <fieldset>
+                                <input autocomplete="on" class="searchText" name="address" placeholder="Civico"
+                                       required type="address">
+
+                            </fieldset>
+                        </div>
+
+                        <div class="col-lg-3 align-self-center">
+                            <fieldset>
+
+                                <input autocomplete="on" class="searchText" name="address" placeholder="CAP"
+                                       required type="address">
+                            </fieldset>
+                        </div>
+                        <div class="col-lg-3 align-self-center">
+                            <fieldset>
+                                <select aria-label="Default select example" class="form-select" id="chooseCategory"
+                                        name="price" onchange="this.form.click()">
+                                    <option selected>Price Range</option>
+                                    <option value="$100 - $250">$0-$10</option>
+                                    <option value="$250 - $500">$10-$25</option>
+                                    <option value="$500 - $1000">$25-$50</option>
+                                    <option value="$1000+">$50 or more</option>
+                                </select>
+                            </fieldset>
+                        </div>
+
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-10 offset-lg-1">
+            <ul class="categories">
+                <li><span class="icon"><img alt="Food" src="../static/assets/images/search-icon-02.png"></span></li>
+                <li><span class="icon"><img alt="Food" src="../static/assets/images/search-icon-02.png"></span></li>
+                <li><span class="icon"><img alt="Food" src="../static/assets/images/search-icon-02.png"></span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="about">
+                    <div class="logo">
+                        <img alt="Plot Listing" src="../static/assets/images/black-logo.png">
+                    </div>
+                    <p>Hi, we are passionate web developers, if you need any web/mobile consulting contacting us! <br>
+                        Mang&Cit is a non-profit project made to get in touch with our skills</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="contact-us">
+                    <h4 style="color: orange">Contact Us</h4>
+                    <p>Gravina in Puglia(BA), Italy 🇮🇹</p>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            🖥️ Gabriele Conte <br>
+                            <a href="#">+39 3756524491</a>
+                        </div>
+                        <div class="col-lg-6">
+                            🖥️ Gaetano Cesano <br>
+                            <a href="#">+39 3756524491</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="sub-footer">
+                    <p>Copyright © 2022 Mang&Cit. All Rights Reserved.
+                        <br>
+                        Design: <a href="https://github.com/GabrieleConte" target=_ title="CSS Templates">Gabriele
+                            Conte</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Scripts -->
+<script src="../static/vendor/jquery/jquery.min.js"></script>
+<script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js" ></script>
+<script src="../static/assets/js/owl-carousel.js"></script>
+<script src="../static/assets/js/animation.js" ></script>
+<script src="../static/assets/js/imagesloaded.js" ></script>
+<script src="../static/assets/js/custom.js"></script>
+
+</body>
+
+</html>
