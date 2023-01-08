@@ -16,10 +16,6 @@ compress.init_app(app)
 app.secret_key = "key"
 
 @app.route("/", methods=["POST", "GET"])
-def index():
-    return render_template("index.html")
-
-@app.route("/index.html", methods=["POST", "GET"])
 def home():
     return render_template("index.html")
 if __name__ == "__main__":
